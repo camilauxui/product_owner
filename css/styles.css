@@ -642,6 +642,24 @@ progress {
   margin-left: auto;
 }
 
+h1, h2, h3 {
+  text-align: left !important;
+}
+
+table th, table td {
+  text-align: left !important;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+td {
+  word-break: break-word;
+  white-space: normal;
+}
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
