@@ -222,7 +222,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contacto</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Hablemos para llevar tu proyecto al siguiente nivel!</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -236,13 +236,13 @@
     <div class="col-md-6">
       <div class="form-group">
         <input class="form-control" type="text" name="name" placeholder="Tu nombre *" required>
-      </div>
+      </div><br>
       <div class="form-group">
         <input class="form-control" type="email" name="_replyto" placeholder="Tu correo *" required>
-      </div>
+      </div><br>
       <div class="form-group mb-md-0">
         <input class="form-control" type="tel" name="phone" placeholder="Tu teléfono">
-      </div>
+      </div><br>
     </div>
     <div class="col-md-6">
       <div class="form-group form-group-textarea mb-md-0">
@@ -1024,5 +1024,35 @@ A continuación, se detalla su situación: <br><br>
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Previene el envío inmediato
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          alert("¡Mensaje enviado con éxito!");
+          form.reset(); // 🔄 Limpia el formulario
+        } else {
+          alert("Ocurrió un error al enviar el mensaje. Intenta nuevamente.");
+        }
+      }).catch(error => {
+        alert("Ocurrió un error al enviar el mensaje. Intenta nuevamente.");
+      });
+    });
+  });
+</script>
+
+
     </body>
 </html>
