@@ -1,5 +1,4 @@
-# 🚀 Portafolio Product Owner – Camila Peña R.
-
+# 🚀 Portafolio Product Owner
 Bienvenido/a a mi portafolio como **Product Owner**, donde presento el trabajo realizado durante mi formación como Product Owner
 
 🔗 **Accede al portafolio aquí:**  
