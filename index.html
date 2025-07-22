@@ -151,8 +151,26 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Sobre mí</h2>
-                    <h3 class="section-subheading text-muted">Principales Hitos</h3>
+              
                 </div>
+    <div class="container mt-4">
+  <table class="table table-bordered shadow-xl">
+    <tbody>
+      <tr>
+        <td style="text-align: left;">
+          <p>
+            Hola, soy <strong>Camila Peña</strong>, <br> Comencé mi carrera en el <strong>diseño gráfico </strong> hace más de veinte años y, motivada por las experiencias digitales, hice la transición al <strong>diseño UX / UI. </strong>
+             He trabajado con diversas agencias creando <strong>productos centrados en el usuario </strong>para todo tipo de empresas. Gracias a mi experiencia en <strong>desarrollo Front-end, desarrollo Android y RoR</strong>, me comunico cercanamente con los equipos de desarrollo.
+                Además, mi certificación como <strong>Product Owner</strong> me ayuda a conectar de manera efectiva <strong>la visión del negocio con las necesidades de los usuarios.</strong> <br>
+          <p>
+            Como <strong>Product Owner</strong> me inspira ayudar al crecimiento de los negocios desarrollando productos que resuelvan problemas reales y generen impacto, guiando al equipo hacia <strong>soluciones viables y sostenibles.</strong>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br><br>
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
@@ -197,28 +215,7 @@
                 </ul>
             </div>
         </section>
-      <div class="container mt-4">
-  <table class="table table-bordered shadow-sm">
-    <tbody>
-      <tr>
-        <td style="text-align: left;">
-          <p>
-            Hola, soy <strong>Camila Peña</strong>, diseñadora multidisciplinaria. Comencé mi carrera en el diseño gráfico hace más de veinte años y, motivada por las experiencias digitales, hice la transición al diseño UX / UI hace aprox. cinco años.
-          </p>
-          <p>
-            He trabajado con diversas agencias de diseño y desarrollo, donde he contribuido a crear productos centrados en el usuario para todo tipo de empresas, desde Startups a Banca. Gracias a mi experiencia en desarrollo Front-end, me comunico con fluidez con los equipos de desarrollo, lo que ayuda a acelerar la implementación y asegurar que los diseños sean tanto creativos como viables.
-          </p>
-          <p>
-            Mi certificación como <strong>Product Owner</strong> me ayuda a conectar de manera más efectiva los objetivos del negocio con las necesidades de los usuarios. 
-          </p>
-          <p>
-            Mi diferencial es: priorizar la experiencia del usuario, entender el lenguaje técnico y alinear cada decisión de diseño con los objetivos del producto o negocio.
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  
 <br><br>
         <!-- Contact-->
         <section class="page-section" id="contact">
@@ -234,54 +231,35 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
+                <form action="https://formspree.io/f/xoqgdrya" method="POST">
+  <div class="row align-items-stretch mb-5">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input class="form-control" type="text" name="name" placeholder="Tu nombre *" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="email" name="_replyto" placeholder="Tu correo *" required>
+      </div>
+      <div class="form-group mb-md-0">
+        <input class="form-control" type="tel" name="phone" placeholder="Tu teléfono">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group form-group-textarea mb-md-0">
+        <textarea class="form-control" name="message" placeholder="Tu mensaje *" rows="5" required></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensaje de éxito opcional -->
+  <div id="success-message" class="text-success text-center d-none">¡Gracias! Tu mensaje fue enviado.</div>
+
+  <!-- Botón de envío -->
+  <div class="text-center">
+    <button class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar mensaje</button>
+  </div>
+</form>
+
             </div>
         </section>
         <!-- Footer-->
@@ -712,7 +690,7 @@ Por último, la falta de consenso respecto a la etapa inicial y el éxito que es
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
+        <!-- Portfolio EcoSmart Solutions-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -782,7 +760,7 @@ A continuación, se detalla su situación: <br><br>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Cerrar Proyecto Luz Viva
                                     </button>
                                 </div>
                             </div>
@@ -808,7 +786,7 @@ A continuación, se detalla su situación: <br><br>
                                     
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Cerrar Proyecto Eco Move
                                     </button>
                                 </div>
                             </div>
@@ -833,10 +811,10 @@ A continuación, se detalla su situación: <br><br>
                                     <div class="container my-5">  
     <div class="row">  
         <div class="col-lg-12">  
-            <h2 class="text-center mb-4">EcoLearn</h2>  
-            <div class="card mb-4">  
+            <h2 class="text-center mb-2">EcoLearn</h2>  
+            <div class="card mb-2">  
                 <div class="card-body">  
-                    <p class="lead">Una startup cuyo propósito central es transformar la educación ecológica a través de la innovación, buscando un modelo edtech escalable que despierte la conciencia ambiental. Su objetivo es hacer que aprender ecología sea tan divertido como jugar.</p>  
+                    <p class="lead">Una startup cuyo propósito central es <b>transformar la educación ecológica a través de la innovación, buscando un modelo educativo escalable que despierte la conciencia ambiental.</b> Su objetivo es aprender ecología jugando.</p>  
                 </div>  
             </div>  
 
@@ -916,12 +894,13 @@ A continuación, se detalla su situación: <br><br>
                     </div>  
                     <h4>Validaciones iniciales</h4>  
                     <ul>  
-                        <li>Estudio de mercado con 20 alumnos y 5,000 familias</li>  
-                        <li>Prototipos MVP: "Recicla rápido" y "Guardián del agua"</li>  
-                        <li>Fondo inicial de $10 millones de pesos</li>  
+                        <li>Estudio de mercado con 20 alumnos y 5.000 familias.</li>  
+                        <li>Prototipos MVP: "Recicla rápido" y "Guardián del agua".</li>  
+                        <li>Fondo inicial de $10 millones de pesos.</li>  
                     </ul>  
                 </div>  
             </div>  
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ecolearn_leancanvas.jpg" alt="..." />
 
             <div class="card mb-4">  
                 <div class="card-header bg-info text-white">  
@@ -986,21 +965,55 @@ A continuación, se detalla su situación: <br><br>
                     <h3>Oportunidad para Inversores</h3>  
                 </div>  
                 <div class="card-body">  
-                    <p>EcoLean se presenta como una oportunidad de inversión por:</p>  
+                    <b>EcoLearn se presenta como una oportunidad de inversión por:</b>  
                     <ul>  
                         <li>MVP ya diseñado y probado (menores costos y riesgos)</li>  
-                        <li>Marca de impacto positivo que genera confianza</li>
-                                   
+
+                        <li> Oportunidad de relacionarse con una  marca con impacto positivo, generar confianza, fortalecer la reputación y conectar con consumidores que buscan marcas con propósito.</li>
+
+                        <li>Equipo con experiencia: Su fundadora es educadora, el equipo técnico está calificado.</li>
+                            
+                            <li></li>inversión inicial de $10 millones y con visión de crecimiento.</li>
+                                   </ul>
                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+
+                 <div class="card mb-4">  
+                <div class="card-header bg-success text-white">  
+                    <h3>Estrategia de Escalamiento y Cierre</h3>  
+                </div>  
+                <div class="card-body">  
+                    <ul>
+                    <li>Fortalecer las alianzas institucionales.</li>
+                        <li>Escalar por etapas: desde colegios a organismos nacionales y luego internacionales.</li>
+                        <li>Adaptabilidad del producto a nuevas funcionalidades.</li>
+                        <li>Uso eficiente de los recursos Invertir en marketing o desarrolladores según demanda evitando sobre inversión.</li>
+                        <br>
+                      
+    </ul>
+                                   
+                                </div>
+                            </div>
+            </div> 
+            <br>
+
+             
+                        </div>
+                    </div> <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Cerrar EcoLearn
                                     </button>
+                </div>
+            
+
+            
+            
+            
+           
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
